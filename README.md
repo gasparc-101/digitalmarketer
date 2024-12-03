@@ -1,6 +1,6 @@
 # Digital marketer Landing page
 
-### A single page website for a ficticious client
+> A single page website for a ficticious client
 
 ## Technologies used:
 
