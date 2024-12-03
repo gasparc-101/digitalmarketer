@@ -106,5 +106,3 @@ This structure provides a clear and professional layout for a personal website t
 - **Note:**The footer must be simple with a dark background and white text/icons.
 
 ---
-
-Would you like help designing any specific section or coding it in HTML/CSS?
