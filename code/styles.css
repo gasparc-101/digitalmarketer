@@ -139,7 +139,98 @@ nav > #logo {
     margin-top: 10px;
 }
 
+@media only screen and (max-width: 575px) {
+    html{
+        font-size: 1rem;
+    }
+    #home {
+        background-image: url(/assets/images/about.jpg);
+        background-position: top;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
 
+    #home .intro {
+        position: relative;
+        top: 75%;
+        height: auto;
+        left: 3%;
+    }
+
+    #home .intro h4 {
+        color:  #6578f3;
+        font-size: 1.25rem;
+        line-height: normal;
+        letter-spacing: 1.4px;
+    }
+
+    #home .intro h2 {
+        color: #EEEEEE;
+        font-size: 1.75rem;
+        margin: 2px 0px 2px 0px ;
+    }
+
+    #home .intro > button {
+
+        height: 2rem;
+        width: 7rem;
+        font-size: 1rem;
+        border-radius: 5px;
+        margin-top: 2%;
+        padding: 2px;
+    }
+
+    #home .intro > .right {
+        margin-left: 2%;
+    }
+
+   nav #ham-menu {
+        display: block;
+        color: #EEEEEE;
+        position: fixed;
+        right: 7%;
+}
+
+nav > .colored {
+    position: absolute;
+    top: 35.47px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(-100%); /* Moves the nav off-screen */
+    transition: transform 0.3s ease;
+}
+nav  #nav-bar {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    justify-content: space-around;
+    gap: 30px; /* Adjust this value to control the gap between items */
+}
+
+
+nav ul  li {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: top 0.5s ease-in-out; 
+}
+
+
+#about {
+   display: none;
+}
+}
 
 
 
