@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 section {
@@ -10,7 +11,7 @@ section {
 
 body {
     background-color: #202020;
-    overflow-x: hidden;
+
 }
 
 header {
@@ -165,6 +166,7 @@ nav > #logo {
     padding: 3px;
 }
 
+
 .skills-title {
     margin-top: 20px;
     color: #6578f3;
@@ -203,10 +205,25 @@ nav > #logo {
     position: absolute;
     bottom: 18.5%;
 }
+
+.image {
+    display: none;
+}
+
 @media only screen and (max-width: 575px) {
     html{
         font-size: 1rem;
     }
+
+
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.5rem; }
+    h4 { font-size: 1.25rem; }
+    h5 { font-size: 1.125rem; }
+    h6 { font-size: 1rem; }
+
+
     #home {
         background-image: url(/assets/images/about.jpg);
         background-position: top;
@@ -234,7 +251,7 @@ nav > #logo {
         margin: 2px 0px 2px 0px ;
     }
 
-    #home .intro > button{
+    #home .intro > button, #about .main > .content .cta-about{
 
         height: 2rem;
         width: 7rem;
@@ -291,9 +308,102 @@ nav > #logo {
     }
 
 
+    /* About Section Adjustments */
+
     #about {
-    display: none;
+        overflow: hidden;
     }
+    #about .main {
+        display: block;
+        position: relative;
+        top: 10%;
+        left: 3%;
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Hide the photo grid */
+    #about .main .photo {
+        display: none;
+    }
+
+    /* Ensure the content is displayed properly */
+    #about .main > .content {
+        width: 100%;
+        margin-left: 0;
+        height: 100vh;
+    }
+
+    #about > .main .content > .about-desk{
+        display: none;
+    }
+    #about .main > .content h2 {
+
+        margin-top: 5px;
+        font-size: 1.75rem;
+    }
+
+
+    #about .main > .content .image{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 90%;
+    }
+     #about .main > .content img {
+
+        height: 200px;
+        border-radius: 30%;
+     }
+
+
+
+    #about .main > .content > p {
+        line-height: normal;
+        width: 90%;
+        letter-spacing: .3px;
+    }
+
+    #about .main > .content .skills-list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 8px;
+    }
+
+    #about .main > .content .skills-list ul {
+        flex-direction: column;
+        margin-top: 0;  
+    }
+
+
+
+    #about .main > .content .skills-list ul > li {
+        font-size: 1rem;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    #about .main > .content .skills-list .shorten {
+        display: none;
+    }
+
+
+    #about .main > .content .cta-about {
+        position: relative;
+        top: 3.5%;
+    }
+
+    /* Hide the table in the about section */
+    #about .main > .content table {
+        display: none;
+    }
+
 }
 
 
