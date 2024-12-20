@@ -5,6 +5,10 @@
     overflow-x: hidden;
 }
 
+h2 {
+    font-size: 2.5rem;
+}
+
 section {
     height: 100vh;
 }
@@ -210,6 +214,81 @@ nav > #logo {
     display: none;
 }
 
+
+/* Services section*/
+
+
+#services > .services-intro, #portfolio > .portfolio-intro {
+    position: relative;
+    top: 15%;
+    color: #6578f3;
+    text-align: center;
+}
+
+#services > .services-intro h2, #portfolio > .portfolio-intro h2 {
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+#services > .services-intro h3, #portfolio > .portfolio-intro h3 {
+    letter-spacing: 2px;
+    color: #EEEEEE;
+}
+
+.services-div, .portfolio-div {
+
+    position: relative;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-card, .portfolio-card {
+    display: grid;
+    grid-template-rows: 3fr 3fr;
+    grid-template-columns:2fr 2fr 2fr ;
+    width: 80%;
+    height: 50vh;
+    gap: 30px;
+    row-gap: 40px;
+}
+
+.services-card > .service, .portfolio-card > .portfolio{
+    background-color: #383535;
+    border-radius: 15px;
+    border-bottom: 3px solid #6578f3;
+    padding: 15px;
+}
+
+
+.services-card .service {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services-card h3 {
+    color: #6578f3;
+    font-size: 1.5rem;
+}
+
+.services-card i {
+    font-size: 3.2rem;
+    line-height: 1.5;
+    color: #6578f3;
+}
+
+.services-card p {
+
+    margin-top: 10px;
+    color: #EEEEEE;
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 1.25;
+}
+
 @media only screen and (max-width: 575px) {
     html{
         font-size: 1rem;
@@ -405,14 +484,3 @@ nav > #logo {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
