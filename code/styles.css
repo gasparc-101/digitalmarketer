@@ -72,7 +72,7 @@ nav > #logo {
 
 #home .intro {
     position: relative;
-    top: 50%;
+    top: 60%;
     left: 3%;
 }
 
@@ -116,16 +116,16 @@ nav > #logo {
     display: grid;
     place-self: center ;
     grid-template-columns: 2fr 3fr;
-    column-gap: 60px;
+    column-gap: 1.5rem;
     height: 75vh;
-    width: 70%;
+    width: 80%;
 }
 
 #about > .main .photo {
     background-image: url(../assets/images/about.jpg);
     background-position: top;
     background-repeat: no-repeat;
-    background-size: 90% auto;
+    background-size: 75% auto;
     border-radius: 10px;
 }
 
@@ -207,7 +207,7 @@ nav > #logo {
 
 #about .content > .cta-about {
     position: absolute;
-    bottom: 18.5%;
+    bottom: 20%;
 }
 
 .image {
