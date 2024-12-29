@@ -35,6 +35,8 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1000; /* Certifique-se de usar um valor alto */
+
 }
 
 nav {
@@ -125,6 +127,10 @@ nav > #logo {
     display: grid;
     height: 100vh;
 }
+
+#about * {
+    overflow: hidden;
+} 
 #about > .main {
     display: grid;
     place-self: center ;
@@ -297,7 +303,9 @@ nav > #logo {
     text-align: center;
 }
 
-
+.portfolio * {
+    overflow: hidden;
+}
 .portfolio > .c-logo {
     height: fit-content;
     width: 5rem;
@@ -448,7 +456,6 @@ nav > #logo {
         top: 0;
         left: 0;
         right: 0;
-        z-index: 1000;
         transition: top 0.5s ease-in-out; 
     }
 
