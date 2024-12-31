@@ -576,29 +576,53 @@ h6 {
 
     /*services section*/
 
+    #about{
+        background-color: red;
+    }
+
     #services, #portfolio {
         height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
     #services .services-intro, #portfolio > .portfolio-intro {
         position: relative;
         top: 120px;
-        text-align: left;
+        text-align: center;
         margin-left: 3%;
     }
 
     #services > .services-div > .services-card, #portfolio > .portfolio-div > .portfolio-card{
-        margin-top: 37%;
+        margin-top: 40%;
         display: flex;
         flex-wrap: wrap;
-        gap: 35px;
+        gap: 30px;
         height: 100%;
         width: 94%;
     }
 
     #services .services-card > .service, #portfolio  .portfolio-card > .portfolio{
         height: 170px;
-        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;    
     }
+
+    .portfolio-card p {
+        text-align: center;
+        width: 100%;
+    }
+
+    .portfolio-card .par-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
 
 }
 
