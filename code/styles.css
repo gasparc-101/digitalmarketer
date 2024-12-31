@@ -88,7 +88,8 @@ nav > #logo {
 #home .intro {
     position: relative;
     top: 60%;
-    left: 3%;
+    padding-left: 3%;
+    height: 80vh;
 }
 
 #home .intro h4 {
@@ -113,7 +114,7 @@ nav > #logo {
     padding: 5px;
     border-radius: 15px;
     height: 45px;
-    width: 200px;
+    width: 170px;
     background-color: #6578f3;
     color: #EEEEEE;
     font-size: 1.2rem;
@@ -135,7 +136,6 @@ nav > #logo {
     display: grid;
     place-self: center ;
     grid-template-columns: 2fr 3fr;
-    column-gap: 1.5rem;
     width: 80%;
     height: 60vh;
 }
@@ -148,6 +148,9 @@ nav > #logo {
     border-radius: 10px;
 }
 
+#about > .main .content {
+    padding-left: 1%;
+}
 
 #about > .main .content h2 {
     
@@ -246,7 +249,7 @@ nav > #logo {
     letter-spacing: 2px;
 }
 
-#services > .services-intro h3, #portfolio > .portfolio-intro h3 {
+#services > .services-intro h5, #portfolio > .portfolio-intro h5 {
     letter-spacing: 2px;
     color: #EEEEEE;
 }
@@ -369,12 +372,30 @@ nav > #logo {
     }
 
 
-    h1 { font-size: 2rem; }
-    h2 { font-size: 1.75rem; }
-    h3 { font-size: 1.5rem; }
-    h4 { font-size: 1.25rem; }
-    h5 { font-size: 1.125rem; }
-    h6 { font-size: 1rem; }
+h1 {
+  font-size: 1.75rem; /* 28px */
+}
+
+h2 {
+  font-size: 1.5rem; /* 24px */
+}
+
+h3 {
+  font-size: 1.25rem; /* 20px */
+}
+
+h4 {
+  font-size: 1rem; /* 16px */
+}
+
+h5 {
+  font-size: 0.875rem; /* 14px */
+}
+
+h6 {
+  font-size: 0.75rem; /* 12px */
+}
+
 
 
     #home {
@@ -545,6 +566,7 @@ nav > #logo {
     #about .main > .content .cta-about {
         position: relative;
         top: 3.5%;
+        border-radius: 10px;
     }
 
     /* Hide the table in the about section */
@@ -552,4 +574,40 @@ nav > #logo {
         display: none;
     }
 
+    /*services section*/
+
+    #services, #portfolio {
+        height: fit-content;
+    }
+    #services .services-intro, #portfolio > .portfolio-intro {
+        position: relative;
+        top: 120px;
+        text-align: left;
+        margin-left: 3%;
+    }
+
+    #services > .services-div > .services-card, #portfolio > .portfolio-div > .portfolio-card{
+        margin-top: 37%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 35px;
+        height: 100%;
+        width: 94%;
+    }
+
+    #services .services-card > .service, #portfolio  .portfolio-card > .portfolio{
+        height: 170px;
+        
+    }
+
+}
+
+.cta {
+    font-family: "Pacifico", sans-serif;
+    cursor: pointer;
+}
+
+.cta:hover{
+    scale: 1.09;
+    transition: .4s;
 }
