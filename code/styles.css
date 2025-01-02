@@ -365,36 +365,35 @@ nav > #logo {
     color: #0724e4;
     font-size: 2rem;
 }
-
 @media only screen and (max-width: 575px) {
-    html{
-        font-size: 1rem;
+    html {
+        font-size: 0.875rem; /* Reduces the base font size for all text */
     }
 
+    h1 {
+        font-size: 1.5rem; /* 24px */
+    }
 
-h1 {
-  font-size: 1.75rem; /* 28px */
-}
+    h2 {
+        font-size: 1.25rem; /* 20px */
+    }
 
-h2 {
-  font-size: 1.5rem; /* 24px */
-}
+    h3 {
+        font-size: 1.125rem; /* 18px */
+    }
 
-h3 {
-  font-size: 1.25rem; /* 20px */
-}
+    h4 {
+        font-size: 1rem; /* 16px */
+    }
 
-h4 {
-  font-size: 1rem; /* 16px */
-}
+    h5 {
+        font-size: 0.875rem; /* 14px */
+    }
 
-h5 {
-  font-size: 0.875rem; /* 14px */
-}
+    h6 {
+        font-size: 0.75rem; /* 12px */
+    }
 
-h6 {
-  font-size: 0.75rem; /* 12px */
-}
 
 
 
@@ -455,7 +454,7 @@ h6 {
     height: 100vh;
     transform: translateX(-100%); /* Moves the nav off-screen */
     transition: transform 0.3s ease;
-}
+    }
     nav  #nav-bar {
     margin-top: 20px;
     display: flex;
@@ -534,9 +533,7 @@ h6 {
 
 
     #about .main > .content > p {
-        line-height: normal;
         width: 90%;
-        letter-spacing: .3px;
     }
 
     #about .main > .content .skills-list {
@@ -565,7 +562,7 @@ h6 {
 
     #about .main > .content .cta-about {
         position: relative;
-        top: 3.5%;
+        top: .9%;
         border-radius: 10px;
     }
 
@@ -575,10 +572,6 @@ h6 {
     }
 
     /*services section*/
-
-    #about{
-        background-color: red;
-    }
 
     #services, #portfolio {
         height: fit-content;
@@ -600,30 +593,124 @@ h6 {
         flex-wrap: wrap;
         gap: 30px;
         height: 100%;
-        width: 94%;
+        width: 90%;
+        margin-bottom: 30%;
     }
 
     #services .services-card > .service, #portfolio  .portfolio-card > .portfolio{
-        height: 170px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;    
+        height: fit-content;
+  
     }
 
     .portfolio-card p {
-        text-align: center;
-        width: 100%;
+        width: 80%;
+        text-align: justify;
     }
 
     .portfolio-card .par-button {
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
     }
 
+    /*----contact & testimonials------------*/
+    #contact{
+        background-color: green;
+        height: 93vh;
+    }
 
+    #contact h2{
+        margin-top: 25%;
+        margin-left: 5%;
+    }
+    #testimonials {
+        position: relative;
+        top: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        height: 70vh;
+    }
 
+    #testimonials > * {
+        background-color: red;
+        height: 20vh;
+        width: 90%;
+        border-radius: 10px;
+    }
+
+    #testimonials .headline{
+        display: flex;
+        align-items: center; 
+    }
+
+    #testimonials .headline > .headline-text {
+        text-align: justify;
+    }
+    #testimonials > .test .photo {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        margin: 10px;
+        background-color: blue;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    #testimonials > .test .cli-1{
+        background-image: url(https://img.freepik.com/free-photo/portrait-handsome-cheerful-male-manager-stylish-red-sunglasses_273609-28546.jpg?t=st=1735811519~exp=1735815119~hmac=fab151153e27038a326d550c6177008f2681aa82aa35bf34aac8b10a76162d2b&w=1380);
+    }
+
+    #testimonials p {
+        text-align: justify;
+        padding: 10px;
+    }
+    footer {
+        background-color: #202020;
+        height: 7vh;
+        position: relative;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer > .social-icons {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        height: 3rem;
+        width: fit-content;
+        margin-left: 5%;
+        color: #b5b6be;
+        font-size: 1.5rem;
+
+    }
+
+    footer > .to-gmail {
+
+        display: flex;
+        background-color: red;
+        height: fit-content;
+        width: fit-content;
+        margin-right: 5.5%;
+        justify-content: center;
+        align-items: center;
+        gap: .9rem;
+
+    }
+
+    footer > .to-gmail i {
+        font-size: 1.3rem
+    }
+
+    footer > .to-gmail i:hover{
+        scale: 1.1;
+    }
+
+    
 }
 
 .cta {
