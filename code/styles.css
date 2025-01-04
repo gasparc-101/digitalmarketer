@@ -614,13 +614,13 @@ nav > #logo {
 
     /*----contact & testimonials------------*/
     #contact{
-        background-color: green;
         height: 93vh;
     }
 
     #contact h2{
         margin-top: 25%;
         margin-left: 5%;
+        color: #0724e4;
     }
     #testimonials {
         position: relative;
@@ -633,7 +633,7 @@ nav > #logo {
     }
 
     #testimonials > * {
-        background-color: red;
+        background-color: #383535;
         height: 20vh;
         width: 90%;
         border-radius: 10px;
@@ -660,12 +660,31 @@ nav > #logo {
     }
 
     #testimonials > .test .cli-1{
-        background-image: url(https://img.freepik.com/free-photo/portrait-handsome-cheerful-male-manager-stylish-red-sunglasses_273609-28546.jpg?t=st=1735811519~exp=1735815119~hmac=fab151153e27038a326d550c6177008f2681aa82aa35bf34aac8b10a76162d2b&w=1380);
+        background-image: url(https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHBvcnRyYWl0fGVufDB8fDB8fHwy);
+    }
+
+    #testimonials > .test .cli-2{
+        background-image: url(https://images.unsplash.com/photo-1672863601285-253fc82db868?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cG9ydHJhaXQlMjBtYWxlfGVufDB8fDB8fHwy);
+    }
+
+    #testimonials > .test .cli-3{
+        background-image: url(https://images.unsplash.com/photo-1654110455429-cf322b40a906?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    }
+
+    #testimonials h4 {
+        color: #0724e4;
+    }
+
+    #testimonials h6 {
+        color: #b9a9a9
     }
 
     #testimonials p {
         text-align: justify;
         padding: 10px;
+        font-size: .85rem;
+        width: 90;
+        color: #EEEEEE;
     }
     footer {
         background-color: #202020;
@@ -692,18 +711,22 @@ nav > #logo {
     footer > .to-gmail {
 
         display: flex;
-        background-color: red;
         height: fit-content;
         width: fit-content;
         margin-right: 5.5%;
         justify-content: center;
         align-items: center;
         gap: .9rem;
+        color: #0724e4;
 
     }
 
     footer > .to-gmail i {
         font-size: 1.3rem
+    }
+
+    footer > .to-gmail h3 {
+        font-size: 1.3rem;
     }
 
     footer > .to-gmail i:hover{
