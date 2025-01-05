@@ -365,6 +365,173 @@ nav > #logo {
     color: #0724e4;
     font-size: 2rem;
 }
+
+  /*----contact & testimonials------------*/
+
+  #contact{
+    /*background-color: red;*/
+    height:90vh;
+    display: grid;
+  }
+  #contact .headings {
+    margin-left: 0;
+    position: relative;
+    top: 70%;
+    text-align: center;
+    color: #0724e4;
+  }
+
+  #contact h5 {
+    color: #EEEEEE;
+  }
+  #contact > *{
+    margin-left: 3%;
+  }
+
+
+  #contact #testimonials{
+    display: grid;
+    place-self: center;
+    grid-template-rows: 3fr;
+    grid-template-columns: 3fr 3fr 3fr;
+    width: 86%;
+    height: 100%;
+  }
+
+  #testimonials > * {
+    background-color: #383535;
+    height: 23vh;
+    width: 95%;
+    border-radius: 10px;
+    border-bottom: 3px solid #6578f3;
+}
+
+#testimonials .headline{
+    display: flex;
+    align-items: center; 
+}
+
+#testimonials .headline > .headline-text {
+    text-align: justify;
+}
+#testimonials > .test .photo {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: 20px;
+    background-color: blue;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#testimonials > .test .cli-1{
+    background-image: url(https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHBvcnRyYWl0fGVufDB8fDB8fHwy);
+}
+
+#testimonials > .test .cli-2{
+    background-image: url(https://images.unsplash.com/photo-1672863601285-253fc82db868?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cG9ydHJhaXQlMjBtYWxlfGVufDB8fDB8fHwy);
+}
+
+#testimonials > .test .cli-3{
+    background-image: url(https://images.unsplash.com/photo-1654110455429-cf322b40a906?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+#testimonials h4 {
+    color: #0724e4;
+}
+
+#testimonials h6 {
+    color: #b9a9a9
+}
+
+#testimonials p {
+    text-align: justify;
+    padding: 10px;
+    font-size: .85rem;
+    width: 90;
+    color: #EEEEEE;
+}
+
+  footer {
+    height: 7vh;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1.75%;
+    }
+
+    footer > .items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 86%;
+        background-color: #383535;
+        border-bottom: 2px solid #0724e4;
+        border-radius: 10px;
+        padding: 0 10px 0 10px;
+    }
+
+    footer  .social-icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        height: 3rem;
+        width: fit-content;
+        color: #b5b6be;
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+
+    footer  .social-icons i:hover {
+        scale: 1.2;
+        transition: .3s;
+        color: #0724e4;
+        cursor: pointer;
+    }
+
+    footer  .to-gmail {
+
+        display: flex;
+        height: fit-content;
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+        gap: .9rem;
+        color: #b5b6be;
+        
+
+    }
+
+    footer  h6 {
+        color: #b5b6be;
+        display: none;
+    }
+
+    footer  .to-gmail i {
+        font-size: 1.3rem;
+        color: #0724e4;
+    }
+
+    footer  .to-gmail h3 {
+        font-size: 1.3rem;
+        color: #b5b6be;
+    }
+    footer  .to-gmail h3:hover {
+        color: #0724e4;
+        transition: .3s;
+        cursor: pointer;
+    }
+
+    footer  .to-gmail i:hover{
+        scale: 1.1;
+    }
+  
+
 @media only screen and (max-width: 575px) {
     html {
         font-size: 0.875rem; /* Reduces the base font size for all text */
@@ -609,127 +776,56 @@ nav > #logo {
     }
 
     /*----contact & testimonials------------*/
-    #contact{
-        height: 93vh;
-    }
 
-    #contact h2{
-        margin-top: 25%;
-        margin-left: 5%;
-        color: #0724e4;
+    #contact .headings{
+
+        top: 50%;
     }
-    #testimonials {
-        position: relative;
-        top: 2%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 3rem;
-        height: 70vh;
+    #contact #testimonials {
+        grid-template-columns: 1fr; /* Cada cartão ocupa 100% da largura */
+        grid-template-rows: auto; /* Altura ajusta automaticamente */
+         /* Espaçamento vertical entre os cartões */
     }
 
     #testimonials > * {
-        background-color: #383535;
-        height: 20vh;
-        width: 90%;
-        border-radius: 10px;
+        width: 100%; /* Ajusta o cartão para ocupar toda a largura do container */
+        height: 12rem; /* Altura dinâmica */
     }
 
-    #testimonials .headline{
-        display: flex;
-        align-items: center; 
-    }
-
-    #testimonials .headline > .headline-text {
-        text-align: justify;
-    }
     #testimonials > .test .photo {
-        height: 60px;
-        width: 60px;
-        border-radius: 50%;
-        margin: 10px;
-        background-color: blue;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        height: 55px;
+        width: 55px;
+    }
+
+    /*---footer---*/
+
+    footer{
+        height: 2%;
+        padding: 5px 0 5px 0;
+        margin: 0;
+    }
+
+    footer i {
+        font-size: 1rem;
+    }
+    footer .social-icons{
+
+        margin-left: 0;
 
     }
 
-    #testimonials > .test .cli-1{
-        background-image: url(https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHBvcnRyYWl0fGVufDB8fDB8fHwy);
+    footer .to-gmail {
+        margin-right: 0;
     }
 
-    #testimonials > .test .cli-2{
-        background-image: url(https://images.unsplash.com/photo-1672863601285-253fc82db868?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cG9ydHJhaXQlMjBtYWxlfGVufDB8fDB8fHwy);
+    footer h6{
+        display: none;
     }
 
-    #testimonials > .test .cli-3{
-        background-image: url(https://images.unsplash.com/photo-1654110455429-cf322b40a906?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    footer .items {
+        width: 100%;
+        border-radius: 0;
     }
-
-    #testimonials h4 {
-        color: #0724e4;
-    }
-
-    #testimonials h6 {
-        color: #b9a9a9
-    }
-
-    #testimonials p {
-        text-align: justify;
-        padding: 10px;
-        font-size: .85rem;
-        width: 90;
-        color: #EEEEEE;
-    }
-    footer {
-        background-color: #202020;
-        height: 7vh;
-        position: relative;
-        bottom: 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    footer > .social-icons {
-        display: flex;
-        align-items: center;
-        gap: 24px;
-        height: 3rem;
-        width: fit-content;
-        margin-left: 5%;
-        color: #b5b6be;
-        font-size: 1.5rem;
-
-    }
-
-    footer > .to-gmail {
-
-        display: flex;
-        height: fit-content;
-        width: fit-content;
-        margin-right: 5.5%;
-        justify-content: center;
-        align-items: center;
-        gap: .9rem;
-        color: #0724e4;
-
-    }
-
-    footer > .to-gmail i {
-        font-size: 1.3rem
-    }
-
-    footer > .to-gmail h3 {
-        font-size: 1.3rem;
-    }
-
-    footer > .to-gmail i:hover{
-        scale: 1.1;
-    }
-
-    
 }
 
 .cta {
