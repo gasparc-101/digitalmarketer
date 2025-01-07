@@ -603,7 +603,7 @@ nav > #logo {
     background-color: #202020;
     transition: 1s;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 #nav-bar.nav-active {
