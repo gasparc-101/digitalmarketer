@@ -108,7 +108,7 @@ nav > #logo {
     font-size: 4rem;
 }
 
-#home .intro button, #about .content > .cta-about {
+#home .intro button, #about .content  .cta-about {
     margin-top: 25px;
     border: none;
     padding: 5px;
