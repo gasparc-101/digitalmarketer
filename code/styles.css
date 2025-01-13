@@ -641,13 +641,12 @@ nav > #logo {
         margin: 2px 0px 2px 0px ;
     }
 
-    #home .intro > button, #about .main > .content .cta-about{
+    #home .intro  button, #about .main > .content .cta-about{
 
         height: 2rem;
         width: 7rem;
         font-size: 1rem;
         border-radius: 5px;
-        margin-top: 2%;
         padding: 2px;
     }
 
