@@ -533,8 +533,13 @@ nav > #logo {
   
 
 @media only screen and (max-width: 575px) {
+
+    html::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+    }
     html {
         font-size: 0.875rem; /* Reduces the base font size for all text */
+        overflow: -moz-hidden-unscrollable;
     }
 
     h1 {
@@ -667,12 +672,10 @@ nav > #logo {
         margin: 0;
     }
 
-    /* Hide the photo grid */
     #about .main .photo {
         display: none;
     }
 
-    /* Ensure the content is displayed properly */
     #about .main > .content {
         width: 100%;
         margin-left: 0;
@@ -802,12 +805,15 @@ nav > #logo {
 
     #testimonials > * {
         width: 100%; /* Ajusta o cartão para ocupar toda a largura do container */
-        height: 12rem; /* Altura dinâmica */
+        height: 12.5rem; /* Altura dinâmica */
+        box-sizing: border-box;
+        overflow: hidden;
+        
     }
 
     #testimonials > .test .photo {
-        height: 55px;
-        width: 55px;
+        height: 50px;
+        width: 50px;
     }
 
     /*---footer---*/
