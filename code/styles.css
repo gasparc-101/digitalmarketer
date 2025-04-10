@@ -699,14 +699,13 @@ nav > #logo {
         justify-content: center;
         align-items: center;
         justify-content: space-between;
-
         width: 90%;
     }
      #about .main > .content img {
-
-        height: 200px;
-        border-radius: 30%;
-     }
+        width: 200px;
+        border-radius: 25%;
+        margin-bottom: 5%;
+    }
 
 
 
