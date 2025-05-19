@@ -606,7 +606,7 @@ nav > #logo {
     left: -100vw;
     top: 5.7%;
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     background-color: #202020;
     transition: 1s;
     flex-direction: column;
