@@ -470,6 +470,7 @@ nav > #logo {
         justify-content: space-between;
         align-items: center;
         width: 86%;
+        height: 100%;
         background-color: #383535;
         border-bottom: 2px solid #0724e4;
         border-radius: 10px;
@@ -819,7 +820,7 @@ nav > #logo {
     /*---footer---*/
 
     footer{
-        height: 2%;
+        height: 10%;
         padding: 5px 0 5px 0;
         margin: 0;
     }
