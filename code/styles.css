@@ -27,7 +27,8 @@ section {
 }
 
 body {
-    background-color: #202020;
+    background-color: #141414;
+    height: 100dvh;
 
 }
 
@@ -419,7 +420,7 @@ nav > #logo {
     width: 80px;
     border-radius: 50%;
     margin: 20px;
-    background-color: blue;
+    background-color: #20206d;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -623,7 +624,7 @@ nav > #logo {
         background-image: url(/assets/images/about.jpg);
         background-position: top;
         background-repeat: no-repeat;
-        height: 100vh;
+        height: 100dvh;
     }
 
     #home .intro {
@@ -667,7 +668,7 @@ nav > #logo {
         top: 10%;
         left: 3%;
         width: 100vw;
-        height: 100vh;
+        height: 100dvh;
         padding: 0;
         margin: 0;
     }
