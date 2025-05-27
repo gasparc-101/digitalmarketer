@@ -45,7 +45,7 @@ You don't need much to run this project locally, just a web browser!
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/gasparc-101/j-arkham.git](https://github.com/j-arkham/j-arkham.git)
+    git clone https://github.com/j-arkham/j-arkham.git
     ```
 
 2.  **Navigate into the project directory:**
